@@ -69,6 +69,8 @@ border-top: 1px solid #F3F2F0;
 .main .title-h1{
     position: relative;
     z-index:4;
+    margin-top: 40px;
+    letter-spacing: 0.03em;    
 }
 .title-h1{
     font-size: 74px;
@@ -77,16 +79,16 @@ border-top: 1px solid #F3F2F0;
 }
 .title-h3{
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 700;    
 }
 .photo{
-    margin-bottom: 120px;
+    margin-bottom: 95px;
     width: 100%;
 }
 header{
     display: flex;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 44px;
     padding-bottom: 60px;
 }
 .nav{
@@ -97,11 +99,11 @@ header{
 }
 
 .nav-item{
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 .nav-item:first-child{
-    padding-left: 0;
+    padding-left: 2px;
 }
 .nav-item:last-child{
     padding-right: 0;
@@ -109,6 +111,7 @@ header{
 .nav-link{
     text-decoration: none;
     font-size: 14px;
+    transition: 0.2s color ease;
 }
 .nav-link:hover{
     color:#D40000;
@@ -129,11 +132,37 @@ header{
 .nav-info .nav-item:first-child::before{
     display: none;
 }
+.nav-social .nav-item{
+    padding-left: 32px;
+    padding-right: 22px;
+}
+.nav-social .nav-item:last-child{
+    padding-right: 0px;
+}
+.nav-item{
+    position: relative;
+}
+.nav-social .nav-item::before{
+    content:'';
+    display: block;
+    width: 1px;
+    height: 24px;
+    background-color: rgba(243, 242, 240, 1);
+    position: absolute;
+    left:0;
+    top: calc(50% - 12px);
+}
+.nav-social .nav-item:first-child::before{
+    display: none;
+}
+.nav-social .nav-link{
+    font-size: 16px;
+}
 .social{
     display: flex;
     justify-content: space-between;
-    padding-bottom: 60px;
-    margin-top: 100px;
+    padding-bottom: 48px;
+    margin-top: 108px;
 
 }
 .social-item:last-child{
@@ -145,6 +174,13 @@ position: relative;
     align-items: center;
     font-size: 16px;
     font-weight: 700;
+    padding-bottom: 11px;
+    transition: 0.2s border-bottom ease;
+    border-bottom: 2px solid transparent;
+}
+.project:hover{
+    border-bottom: 2px solid #F3F2F0;
+    
 }
 .project-img{
     width: 16px;
@@ -155,11 +191,15 @@ position: relative;
 }
 .skill{
     display: flex;
-    justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 47px;
+    
 }
+.skill .title-h3{
+    letter-spacing: 0.03em;}
+
 .skill-item{
-    flex: 0 0 21%;
+    flex: 0 0 22%;
+    margin-right: 3%;
     
 }
 .skill .title-h3{
@@ -169,7 +209,7 @@ position: relative;
     line-height: 150%;
 }
 .section-steps{
-    padding-top:150px;
+    padding-top:148px;
     padding-bottom: 198px;
 }
 .steps-item{
@@ -177,8 +217,8 @@ position: relative;
     justify-content: space-between;
     align-items: center;
     line-height: 150%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .steps-discription{
     font-size: 16px;
@@ -190,7 +230,7 @@ position: relative;
     
 }
 .steps-title span{
-    margin-right: 45px;
+    margin-right: 38px;
 }
 .circle-main{
     width: 253px;
@@ -199,12 +239,12 @@ position: relative;
     left:-128px;
     top:0;
     z-index:1;
-    top: calc(50% - 126px);
+    top: calc(50% - 137px);
 }
 .triangle{
     position:absolute;
     left:-151px;
-    top:0;
+    top:-21px;
     z-index:2;
 }
 .circle-nav{
@@ -212,12 +252,15 @@ position: relative;
     height: 106px;
     position:absolute;
     right: 38px;
-    top: calc(50% - 53px);
+    top: calc(50% - 60px);
+}
+.section-about{
+    padding-top:112px;
+
 }
 .about{
     display: grid;
-    grid-template: 349px/repeat(4, 1fr);
-    padding-top: 180px;
+    grid-template: 286px/repeat(4, 1fr);
 }
 .about-title{
     grid-column:1/3;
@@ -235,31 +278,39 @@ position: relative;
     font-size: 28px;
     line-height: 150%;
     opacity: 0.8;
-    padding: 62px 10px 62px 20px;
+    padding: 57px 10px 62px 9px;
 }
 .about-01{
     grid-column:3/4;
     grid-row:2/3;
-    padding: 60px 10px 30px 20px;
+    padding: 47px 10px 30px 9px;
 
 }
 .about-02{
     grid-column:4/5;
     grid-row:2/3;
-    padding: 60px 10px 30px 10px;
+    padding: 47px 10px 30px 8px;
 }
 .about-03{
     grid-column:3/4;
     grid-row:3/4;
-    padding: 30px 20px;
+    padding: 20px 14px 20px 9px;;
+    
 }
 .about-04{
     grid-column:4/5;
     grid-row:3/4;
-    padding: 30px 10px 30px 10px;
+    padding: 20px 9px 30px 9px;
 }
 .about-item .discription{
     line-height: 150%;
     opacity: 0.8;
   
+}
+.about-item > p{
+    margin-top: 0;
+margin-bottom: 0;
+}
+.about-item .title-h3{
+    margin-bottom: 21px;
 }
