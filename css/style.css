@@ -175,7 +175,7 @@ position: relative;
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 11px;
-    transition: 0.2s border-bottom ease;
+    transition: 0.2s ease;
     border-bottom: 2px solid transparent;
 }
 .project:hover{
@@ -467,7 +467,6 @@ fill:  #F3F2F0;
 .tech{
     display: grid;
     grid-template: 148px 148px / repeat(4, 1fr);
-    text-align: center;
 }
 .tech-item{
     border-bottom: 1px solid rgba(243, 242, 240, 0.3);
@@ -486,6 +485,9 @@ fill:  #F3F2F0;
 .tech-img{
     filter:grayscale(100%);
     transition: 0.2s ease;
+    padding: 30px;
+    display:block;
+    text-align: center;
 }
 .tech-item:hover .tech-img {
     filter:grayscale(0);
@@ -502,6 +504,8 @@ fill:  #F3F2F0;
     line-height: 150%;
     padding: 20px;
     box-sizing: border-box;
+  
+   
 }
 .ui-tooltip-content::before{
     content: "";
@@ -519,3 +523,61 @@ fill:  #F3F2F0;
     display: grid;
     grid-template: repeat(4, 1fr) / 1fr 1fr;
 }
+.tarif-item{
+    border-bottom: 1px solid #F3F2F0;
+}
+.tarif-title{
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.03em;}
+
+.tarif-discription{
+    font-size: 28px;
+    line-height: 150%;
+    opacity: 0.8;
+}
+.tarif-name{
+    font-size: 28px;
+    line-height: 150%;
+}
+.tarif-text{
+    font-size: 16px;
+    line-height: 150%; 
+    opacity: 0.8; 
+}
+.tarif .project{
+    display: inline-flex;
+}
+.tarif-pack{
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+.tarif-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+.tarif-list-item{
+    position:relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.tarif-list-item::before{
+    content:'';
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: #F3F2F0;
+    border-radius: 100%;
+    position:absolute;
+    left:0;
+    top: calc(50% - 2px);
+}
+.tarif-price{
+    font-size: 42px;
+    line-height: 150%;
+    font-weight: 700;
+}
+    
