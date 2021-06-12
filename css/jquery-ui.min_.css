@@ -1205,3 +1205,13 @@ a.ui-button:active,
 	-webkit-box-shadow: 0px 0px 5px #666666;
 	box-shadow: 0px 0px 5px #666666;
 }
+
+.ui-tooltip{
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+}
+body .ui-tooltip{
+	border-width: 2px;
+} 
